@@ -1,12 +1,39 @@
-// src/components/SkillsSection.js
 import React from 'react';
-import { FaCode, FaChartBar, FaCogs, FaCloud } from 'react-icons/fa';
+import { FaRobot, FaChartBar, FaCogs, FaCloud } from 'react-icons/fa';
 
 const skillsData = [
-  { category: 'Web Development', icon: FaCode, skills: ['React', 'HTML', 'CSS'] },
-  { category: 'Data Analysis', icon: FaChartBar, skills: ['Python', 'Pandas', 'SQL'] },
-  { category: 'DevOps', icon: FaCogs, skills: ['Docker', 'Kubernetes', 'CI/CD'] },
-  { category: 'Cloud', icon: FaCloud, skills: ['AWS', 'Azure'] },
+  { category: 'AI/ML', icon: FaRobot, skills: ['PyTorch', 'TensorFlow', 'scikit-learn', 'open-cv', 'Hugging Face'] },
+  { 
+    category: 'Data Analysis',
+    icon: FaChartBar,
+    skills: [
+      'Python',
+      'Pandas',
+      'NumPy',
+      'SQL',
+      'Matplotlib',
+      'Seaborn',
+      'Statistics'
+    ]
+  },
+  { 
+    category: 'DevOps',
+    icon: FaCogs,
+    skills: [
+      'Git & GitHub',
+      'Docker',
+      'Linux',
+      'CI/CD Pipelines',
+    ]
+  },
+  {
+    category: 'Cloud',
+    icon: FaCloud,
+    skills: [
+      'AWS',
+      'Azure',
+    ]
+  },
 ];
 
 const SkillsSection = () => {

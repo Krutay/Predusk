@@ -57,8 +57,7 @@ const HeroSection = () => {
             I'm Krutay Upadhyay.
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            I'm a passionate Web Developer, Data Analyst, and DevOps enthusiast creating awesome and effective solutions for companies of all sizes around the globe. Let's start scrolling and learn more about me.
-          </p>
+          A data-driven developer, AI enthusiast and competitive programmer, excited to deepen my DevOps expertise, blending code, data, and infrastructure to build impactful, scalable solutions.</p>
         </div>
       </div>
 

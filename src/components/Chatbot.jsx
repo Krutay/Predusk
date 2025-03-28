@@ -4,18 +4,99 @@ import { FaComment, FaTimes } from 'react-icons/fa';
 
 const Chatbot = () => {
   const resumeText = `
-Krutay's Resume
-- Name: Krutay
-- Education: B.Tech in Computer Science, XYZ University, 2020-2024
-- Skills: Data Analysis (Python, Pandas, SQL), DevOps (Docker, Kubernetes, CI/CD), Web Development (React, HTML, CSS), Cloud (AWS, Azure)
-- Experience: 
-  - Intern at ABC Corp, June 2023 - August 2023: Developed a data pipeline using Python and AWS.
-  - Freelance Web Developer, January 2023 - May 2023: Built responsive websites using React.
-- Projects:
-  - Portfolio Webpage: Created a personal portfolio with a chatbot for predusk internship using React and Groq API.
-  - Data Analysis Dashboard: Built a dashboard using Python and Pandas to visualize sales data.
-- Certifications: AWS Certified Solutions Architect, Google Data Analytics Professional Certificate
-- Contact: krutay@example.com, linkedin.com/in/krutay, github.com/krutay
+    Krutay's Resume
+    Krutay Upadhyay
+     +91 7016303826     krutayupadhyay@gmail.com     
+    LinkedIn     
+    GitHub     
+    Leetcode
+    Junior at IIT Dharwad, passionate about AI/ML and competitive programming. Skilled in
+    leveraging machine learning for research and real-world applications. Seeking impactful
+    opportunities to apply my skills and contribute to innovation.
+    EDUCATION
+    IIT Dharwad , Computer Science and Engineering
+    CPI : 8.94 
+    Nov 2022 - Present
+    Key coursework completed includes Artificial Intelligence, Probability, Data Analysis,
+    Design Algorithm and Analysis, Computer Architecture, Deep Learning, Operating
+    Systems, Database and Information Systems and Software Development for
+    Scientific Computing.
+    RMG Maheshwari English Academy 
+    XII : 96%
+    J.H Ambani Saraswati Vidyamandir 
+    X : 95%
+    2020 - 2022
+    2010 -2020
+    SKILLS
+    🔹
+    Programming Skills : Python | Java (basic) | C | C++
+    🔹
+    Machine Learning: NumPy | Pandas | Matplotlib | PyTorch | Deep Learning | Computer Vision
+    🔹
+    🔹
+    Frameworks : YOLO | OpenCV | Mediapipe
+    Tools : Github | Google Colab | SQL
+    🔹
+    Web Development : HTML | CSS | JavaScript | Bootstrap (Basics) | React with Node.js (Basics)
+    ACHEIVMENTS
+    Joint Entrance Exam, Advanced (JEE-A) : All India Rank 4058
+    🔹
+    🔹
+    Joint Entrance Exam, Mains (JEE-M) : All India Rank 4251
+    🔹
+    GUJCET : Scored 102 out of 120
+    🔹
+    AI/ML Certification (Coursera) : Completed the comprehensive AI/ML Certification by Andrew
+    Ng, mastering fundamental and advanced machine learning concepts including supervised and
+    unsupervised learning, deep learning, and practical model evaluation techniques.
+    🔹
+    AI/ML Workshop (IISc Bangalore) : Participated in an intensive AI/ML Workshop at IISc
+    Bangalore, developing advanced skills in neural networks and data-driven decision-making
+    through hands-on projects and real-world applications.
+    🔹
+    Vocational Training Certificate(Reliance Industries lmt.) : Obtained hands-on expertise in
+    networking, web development, and database monitoring. Developed practical skills through real
+    world projects, enhancing technical proficiency and problem-solving abilities.
+    PROJECTS & RESEARCH
+    🔹
+    Pose Estimation & Injury Risk Prediction (Research, IIT Dharwad)
+    Developing a computer vision system to evaluate poses against expert
+    benchmarks, predicting injury risks based on age, flexibility, balance, and speed
+    using mediapipe.
+    Transfer Learning for Biological Networks (Research, IIT Dharwad)
+    🔹
+    Researched machine learning applications in network biology to predict biological
+    behaviors using transfer learning using Bert Tokenizer model.
+    🔹
+    Human Detection & Tracking using YOLOv8 & DeepSORT
+    Built a real-time object tracking system for human detection with YOLOv8 and
+    DeepSORT, achieving high accuracy in motion tracking.
+    🔹
+    Mastermind Game using Genetic Algorithms
+    Developed an AI-powered solver for the Mastermind game using evolutionary
+    algorithms.
+    EXTRACURRICULARS & LEADERSHIP
+    🔹
+    GradStories Project – Career Development Cell (CDC), IIT Dharwad:
+    Conducted comprehensive interviews with alumni to gather and share career guidance and
+    success strategies, contributing to the CDC's mission of fostering professional development among
+    students.
+    Inter IIT Football Team, IIT Dharwad:
+    🔹
+    Represented the institute in the 56th Inter IIT Sports Meet, showcasing teamwork, discipline,
+    and competitive spirit.
+    Organizing Team Member, IIT Dharwad Events:
+    🔹
+    Assisted in the successful execution of major events including Parsec (Annual Tech Fest) and
+    Freshers’ Events, demonstrating strong organizational and coordination skills.
+    General Secretary (Ground Floor), IIT Dharwad:
+    🔹
+    Led hostel operations by coordinating communications, organizing community events, and
+    managing daily tasks—demonstrating strong leadership, initiative, and effective problem-solving
+    skills.
+    Languages:
+    🔹
+    Proficient in Sanskrit, English, Hindi, and Gujarati
   `;
 
   const [messages, setMessages] = useState([
@@ -108,12 +189,12 @@ Krutay's Resume
               value={userInput}
               onChange={(e) => setUserInput(e.target.value)}
               placeholder="Ask about my resume..."
-              className="flex-1 p-2 bg-gray-700 text-white rounded-l-md focus:outline-none"
+              className="w-[80%] p-2 bg-gray-700 text-white rounded-l-md focus:outline-none"
               disabled={loading}
             />
             <button
               type="submit"
-              className="bg-orange-500 p-2 rounded-r-md text-white hover:bg-orange-600"
+              className="w-[20%] bg-orange-500 p-2 rounded-r-md text-white hover:bg-orange-600"
               disabled={loading}
             >
               {loading ? '...' : 'Send'}
